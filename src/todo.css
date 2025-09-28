@@ -1,0 +1,142 @@
+body {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: #e5e0da;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 650px;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    color: #112b51;
+}
+
+.addGroup,
+.addTask {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    background-color: #112b51;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: white;
+}
+
+::placeholder {
+    color: rgb(182, 196, 196);
+}
+
+button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: none;
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #005ecb;
+}
+
+/* Container for all group buttons */
+.groupBlock {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.groupBtnCapsule {
+    display: flex;
+    align-items: center;
+    background: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #1e90ff;
+}
+
+.groupBtn {
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    padding: 9px 16px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.generalBtn {
+    border-radius: 10px;
+}
+
+.groupBtn.active {
+    background-color: #1e90ff;
+    color: white;
+}
+
+.deleteGroupBtn {
+    background-color: #f0f0f0;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    border-radius: 0px 10px 10px 0px;
+    padding: 8px 12px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.deleteGroupBtn:hover {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.generalBtn:hover {
+    background-color: #005ecb;
+}
+
+
+.listoftask {
+    text-align: left;
+    font-size: 18px;
+}
+
+.listoftask ul {
+    list-style: none;
+    padding: 0;
+}
+
+.listoftask li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.deleteTask {
+    background-color: crimson;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.deleteTask:hover {
+    background-color: darkred;
+}
